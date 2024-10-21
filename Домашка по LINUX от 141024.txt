@@ -1,14 +1,86 @@
-[ec2-user@ip-172-31-33-20 ~]$ cd /opt/130824_morning/Anton_SB
-[ec2-user@ip-172-31-33-20 Anton_SB]$ touch myfirstbashscript.sh
-[ec2-user@ip-172-31-33-20 Anton_SB]$ vim
-myfirstbashscript.sh  script.sh             Test.txt/
-[ec2-user@ip-172-31-33-20 Anton_SB]$ vim myfirstbashscript.sh
-[ec2-user@ip-172-31-33-20 Anton_SB]$ chmod +x myfirstbashscript.sh
-[ec2-user@ip-172-31-33-20 Anton_SB]$ ./myfirstbashscript.sh
-Today date : Mon Sep 30 18:52:04 UTC 2024
-Hello ANTON
-Вы работаете в дериктории : /opt/130824_morning/Anton_SB
-Колличество процессов: 119
-Количество процессов bioset: 0
-Права на файл /etc/passwd: -rw-r--r--
+[ec2-user@ip-172-31-33-20 Anton_SB]$ chmod +x fullscript.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ./fullscript.sh
+./fullscript.sh: line 1: 1: command not found
+./fullscript.sh: line 2: 2: command not found
+./fullscript.sh: line 3: 3: command not found
+./fullscript.sh: line 4: 4: command not found
+./fullscript.sh: line 5: 5: command not found
+./fullscript.sh: line 6: 6: command not found
+./fullscript.sh: line 7: 7: command not found
+./fullscript.sh: line 8: 8: command not found
+./fullscript.sh: line 9: 9: command not found
+./fullscript.sh: line 10: 10: command not found
+./fullscript.sh: line 11: 11: command not found
+./fullscript.sh: line 12: 12: command not found
+./fullscript.sh: line 13: 13: command not found
+./fullscript.sh: line 14: 14: command not found
+./fullscript.sh: line 15: 15: command not found
+./fullscript.sh: line 16: 16: command not found
+./fullscript.sh: line 17: 17: command not found
+./fullscript.sh: line 18: 18: command not found
+./fullscript.sh: line 19: 19: command not found
+./fullscript.sh: line 20: 20: command not found
+./fullscript.sh: line 21: 21: command not found
+./fullscript.sh: line 22: 22: command not found
+./fullscript.sh: line 23: 23: command not found
+./fullscript.sh: line 24: 24: command not found
+./fullscript.sh: line 25: 25: command not found
+./fullscript.sh: line 26: 26: command not found
+[ec2-user@ip-172-31-33-20 Anton_SB]$ vim fullscript.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ chmod +x fullscript.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ./fullscript.sh
+Hello Student!
+Введите ваше имя: Anton
+Welcome to terminal Anton
+Сохраняем данные
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+[ec2-user@ip-172-31-33-20 Anton_SB]$ vim fullscript.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ chmod +x fullscript.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ./fullscript.sh
+Hello Student!
+Введите ваше имя: Anton
+Welcome to terminal Anton
+Сохраняем данные
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Well done Boss
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls /tmp/test
+ketdate.txt  mydate1.txt  mydate.txt  romansdate.txt
+[ec2-user@ip-172-31-33-20 Anton_SB]$ cat /tmp/test/mydate.txt
+17:42:47
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        957M     0  957M   0% /dev
+tmpfs           966M     0  966M   0% /dev/shm
+tmpfs           966M  560K  965M   1% /run
+tmpfs           966M     0  966M   0% /sys/fs/cgroup
+/dev/nvme0n1p1   20G   20G  907M  96% /
+tmpfs           194M     0  194M   0% /run/user/1000
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls /opt/mydate
+mydate.txt  newdate.txt  newmydate.txt
+[ec2-user@ip-172-31-33-20 Anton_SB]$ cat /opt/mydate/newmydate.txt
+17:42:47
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        957M     0  957M   0% /dev
+tmpfs           966M     0  966M   0% /dev/shm
+tmpfs           966M  560K  965M   1% /run
+tmpfs           966M     0  966M   0% /sys/fs/cgroup
+/dev/nvme0n1p1   20G   20G  907M  96% /
+tmpfs           194M     0  194M   0% /run/user/1000
 [ec2-user@ip-172-31-33-20 Anton_SB]$
