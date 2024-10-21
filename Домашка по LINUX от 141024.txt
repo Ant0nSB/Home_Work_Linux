@@ -1,0 +1,14 @@
+[ec2-user@ip-172-31-33-20 ~]$ cd /opt/130824_morning/Anton_SB
+[ec2-user@ip-172-31-33-20 Anton_SB]$ touch myfirstbashscript.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ vim
+myfirstbashscript.sh  script.sh             Test.txt/
+[ec2-user@ip-172-31-33-20 Anton_SB]$ vim myfirstbashscript.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ chmod +x myfirstbashscript.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ./myfirstbashscript.sh
+Today date : Mon Sep 30 18:52:04 UTC 2024
+Hello ANTON
+Вы работаете в дериктории : /opt/130824_morning/Anton_SB
+Колличество процессов: 119
+Количество процессов bioset: 0
+Права на файл /etc/passwd: -rw-r--r--
+[ec2-user@ip-172-31-33-20 Anton_SB]$
