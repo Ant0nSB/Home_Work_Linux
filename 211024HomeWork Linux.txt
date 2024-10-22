@@ -1,0 +1,126 @@
+[ec2-user@ip-172-31-33-20 ~]$
+[ec2-user@ip-172-31-33-20 ~]$ cd /opt/130824_morning/Anton_SB
+[ec2-user@ip-172-31-33-20 Anton_SB]$ mkdir ./Anton
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls -l
+total 132
+drwxrwxr-x 2 ec2-user ec2-user     6 Oct 22 16:28 Anton
+-rwxrwxr-x 1 ec2-user ec2-user   166 Oct 16 12:51 Archive.sh
+-rwxrwxr-x 1 ec2-user ec2-user   110 Oct 16 12:05 bushscript.sh
+-rwxrwxr-x 1 ec2-user ec2-user   305 Oct  7 12:32 create.sh
+-rw-rw-r-- 1 ec2-user ec2-user    13 Oct  2 12:04 file.txt
+-rwxrwxr-x 1 ec2-user ec2-user  1306 Oct 21 17:42 fullscript.sh
+-rwxrwxr-x 1 ec2-user ec2-user   445 Sep 30 18:51 myfirstbashscript.sh
+-rwxrw-r-- 1 ec2-user ec2-user    71 Oct  9 11:50 newScript.sh
+-rw-rw-r-- 1 ec2-user ec2-user    20 Oct  9 11:58 os_info.txt
+-rw-rw-r-- 1 ec2-user ec2-user    13 Oct  9 11:58 os_name.txt
+-rw-rw-r-- 1 ec2-user ec2-user   328 Oct 16 12:06 output.txt
+-rw-rw-r-- 1 ec2-user ec2-user  1154 Oct  9 11:58 processor_info.txt
+-rw-rw-r-- 1 ec2-user ec2-user 76353 Oct  7 12:32 process.txt
+-rwxrwxr-x 1 ec2-user ec2-user   136 Oct  2 12:02 script3.sh
+-rwxrwxr-x 1 ec2-user ec2-user    28 Sep 30 11:59 script.sh
+-rwxrw-r-- 1 ec2-user ec2-user   451 Oct  9 11:59 sleeper.sh
+drwxrwxr-x 2 ec2-user ec2-user     6 Oct  7 11:51 test_dir1
+d-wx-w---x 2 ec2-user ec2-user     6 Sep 25 12:26 Test.txt
+[ec2-user@ip-172-31-33-20 Anton_SB]$ cd ./Anton
+[ec2-user@ip-172-31-33-20 Anton]$ nano task_Anton.sh
+[ec2-user@ip-172-31-33-20 Anton]$ chmod +x task_Anton.sh
+chmod: cannot access ‘task_Anton.sh’: No such file or directory
+[ec2-user@ip-172-31-33-20 Anton]$ ^C
+[ec2-user@ip-172-31-33-20 Anton]$ ls
+task_Anton.shoooo
+[ec2-user@ip-172-31-33-20 Anton]$ mv task_Anton.shoooo task_Anton.sh
+[ec2-user@ip-172-31-33-20 Anton]$
+[ec2-user@ip-172-31-33-20 Anton]$ ls
+task_Anton.sh
+[ec2-user@ip-172-31-33-20 Anton]$ chmod +x task_Anton.sh
+[ec2-user@ip-172-31-33-20 Anton]$ ls
+task_Anton.sh
+[ec2-user@ip-172-31-33-20 Anton]$ ^C
+[ec2-user@ip-172-31-33-20 Anton]$ ./task_Anton.sh
+./task_Anton.sh: line 9: syntax error: unexpected end of file
+[ec2-user@ip-172-31-33-20 Anton]$ nano task_Anton.sh
+[ec2-user@ip-172-31-33-20 Anton]$ ./task_Anton.sh
+[ec2-user@ip-172-31-33-20 Anton]$ nano task_Anton.sh
+[ec2-user@ip-172-31-33-20 Anton]$ ls
+01221024  02221024  03221024  04221024  05221024  06221024  07221024  08221024  09221024  10221024  task_Anton.sh
+[ec2-user@ip-172-31-33-20 Anton]$ crontab -e
+crontab: installing new crontab
+[ec2-user@ip-172-31-33-20 Anton]$ crontab -l
+
+# *3/15 * * * * /opt/250324_evening/IrinaKis/taskIRINA1.sh >> /opt/250324_evening/IrinaKis/logs1.log
+# */15 * * * * /opt/260324_morning/elena/taskELENA.sh
+# */15 * * * * /opt/250324_evening/Vdream/taskDMITRIJ.sh
+# */15 * * * * /opt/260324_morning/mariia_shi/taskMARIA.sh
+# */15 * * * * /opt/260324_morning/Andrii_F/taskAndrii.sh
+# */15 * * * * /opt/260324_morning/Beidel/taskBeidel.sh
+# */15 * * * * /opt/260324_morning/iliaBololo/taskIlia.sh
+# */15 * * * *  /opt/260324_morning/PokazachenkoIryna/taskIrynaP.sh
+# */15 * * * * /opt/260324_morning/Margot/taskMargot.sh
+# 0 0 1 * * /opt/260324_morning/PokazachenkoIryna/script0706.sh
+# 55 11 07 08 * /opt/21052024_morning/Olga_Ziabko/today.sh
+# 0 1 * * * /opt/21052024_morning/Olga_Ziabko/archive1.sh
+#Natalia_Gordiyenko 130824
+#15 * * * * /opt/21052024_morning/Natalia_Gordiyenko/task_Nata.sh
+#*/15 * * * * /opt/21052024_morning/Anton_SB/Anton/task_Anton.sh >> /opt/21052024_morning/Anton_SB/Anton/task_Anton.log 2>&1
+#*/15 * * * * /opt/21052024_morning"Keduk Karyna"/task_Karyna.sh
+#15 * * * *  /opt/21052024_morning/Shurinova/task_Elena.sh
+#*/15 * * * * /opt/09072024_morning/DeyanSpasov/taskLesson18Deyan.sh
+
+#* * * * * /opt/09072024_morning/DeyanSpasov/crontabUbung.sh >> /opt/09072024_morning/DeyanSpasov/test_dir/file3.txt
+
+#*/15 * * * * /opt/09072024_morning/Yevhen_Kariev/task_Kariev.sh
+#*/15 * * * * /opt/09072024_morning/BI_OKSANA/task_OKSANA.sh
+# */15 * * * */opt/130824_morning/serhii_kurlykin/task_Serhii_Kurlykin.sh
+*/15 * * * * /opt/130824_morning/Anton_SB/Anton/task_Anton.sh
+
+[ec2-user@ip-172-31-33-20 Anton]$ sudo systemctl status crond
+● crond.service - Command Scheduler
+   Loaded: loaded (/usr/lib/systemd/system/crond.service; enabled; vendor preset: enabled)
+   Active: active (running) since Sun 2024-06-09 18:42:22 UTC; 4 months 13 days ago
+ Main PID: 20799 (crond)
+    Tasks: 1
+   Memory: 1.4M
+   CGroup: /system.slice/crond.service
+           └─20799 /usr/sbin/crond -n
+
+Sep 19 16:11:01 ip-172-31-33-20.eu-central-1.compute.internal crond[20799]: (ec2-user) RELOAD (/var/spool/cron/ec2-user)
+Sep 19 17:46:01 ip-172-31-33-20.eu-central-1.compute.internal crond[20799]: (ec2-user) RELOAD (/var/spool/cron/ec2-user)
+Sep 19 17:48:01 ip-172-31-33-20.eu-central-1.compute.internal crond[20799]: (ec2-user) RELOAD (/var/spool/cron/ec2-user)
+Sep 19 20:19:01 ip-172-31-33-20.eu-central-1.compute.internal crond[20799]: (ec2-user) RELOAD (/var/spool/cron/ec2-user)
+Sep 19 20:25:01 ip-172-31-33-20.eu-central-1.compute.internal crond[20799]: (ec2-user) RELOAD (/var/spool/cron/ec2-user)
+Sep 20 11:54:01 ip-172-31-33-20.eu-central-1.compute.internal crond[20799]: (ec2-user) RELOAD (/var/spool/cron/ec2-user)
+Sep 23 20:21:01 ip-172-31-33-20.eu-central-1.compute.internal crond[20799]: (ec2-user) RELOAD (/var/spool/cron/ec2-user)
+Oct 21 12:02:01 ip-172-31-33-20.eu-central-1.compute.internal crond[20799]: (ec2-user) RELOAD (/var/spool/cron/ec2-user)
+Oct 22 12:23:01 ip-172-31-33-20.eu-central-1.compute.internal crond[20799]: (ec2-user) RELOAD (/var/spool/cron/ec2-user)
+Oct 22 17:02:01 ip-172-31-33-20.eu-central-1.compute.internal crond[20799]: (ec2-user) RELOAD (/var/spool/cron/ec2-user)
+[ec2-user@ip-172-31-33-20 Anton]$ tail /var/log/syslog
+tail: cannot open ‘/var/log/syslog’ for reading: No such file or directory
+[ec2-user@ip-172-31-33-20 Anton]$ chmod +x /opt/130824_morning/Anton_SB/Anton/task_Anton.sh
+[ec2-user@ip-172-31-33-20 Anton]$ ls
+01221024  02221024  03221024  04221024  05221024  06221024  07221024  08221024  09221024  10221024  task_Anton.sh
+[ec2-user@ip-172-31-33-20 Anton]$ cat task_Anton.sh
+#!/bin/bash
+for i in {1..10}
+do
+    FILE_NUM=$(printf "%02d" $i)
+    DATE=$(date +"%d%m%y")
+    FILENAME="${FILE_NUM}${DATE}"
+    touch "$FILENAME"
+done
+
+[ec2-user@ip-172-31-33-20 Anton]$ ls al
+ls: cannot access al: No such file or directory
+[ec2-user@ip-172-31-33-20 Anton]$ ls -l
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user   0 Oct 22 16:48 01221024
+-rw-rw-r-- 1 ec2-user ec2-user   0 Oct 22 16:48 02221024
+-rw-rw-r-- 1 ec2-user ec2-user   0 Oct 22 16:48 03221024
+-rw-rw-r-- 1 ec2-user ec2-user   0 Oct 22 16:48 04221024
+-rw-rw-r-- 1 ec2-user ec2-user   0 Oct 22 16:48 05221024
+-rw-rw-r-- 1 ec2-user ec2-user   0 Oct 22 16:48 06221024
+-rw-rw-r-- 1 ec2-user ec2-user   0 Oct 22 16:48 07221024
+-rw-rw-r-- 1 ec2-user ec2-user   0 Oct 22 16:48 08221024
+-rw-rw-r-- 1 ec2-user ec2-user   0 Oct 22 16:48 09221024
+-rw-rw-r-- 1 ec2-user ec2-user   0 Oct 22 16:48 10221024
+-rwxrwxr-x 1 ec2-user ec2-user 154 Oct 22 16:49 task_Anton.sh
+
